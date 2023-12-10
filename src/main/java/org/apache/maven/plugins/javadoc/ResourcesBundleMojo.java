@@ -95,7 +95,7 @@ public class ResourcesBundleMojo extends AbstractJavadocMojo {
     @Override
     protected void doExecute() throws MojoExecutionException, MojoFailureException {
         if (skip) {
-            getLog().info("Skipping javadoc generation");
+            getLog().info("Skipping javadoc resource bundle generation");
             return;
         }
 
