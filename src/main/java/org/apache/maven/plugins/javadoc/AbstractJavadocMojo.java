@@ -1226,7 +1226,7 @@ public abstract class AbstractJavadocMojo extends AbstractMojo {
      * @see org.apache.maven.reporting.AbstractMavenReport#outputDirectory
      * @see <a href="https://docs.oracle.com/en/java/javase/17/docs/specs/man/javadoc.html#additional-options-provided-by-the-standard-doclet">Doclet option d</a>
      */
-    @Parameter(defaultValue = "${project.reporting.outputDirectory}", readonly = true, required = true)
+    @Parameter(defaultValue = "${project.build.directory}/reports", required = true)
     protected File outputDirectory;
 
     /**
